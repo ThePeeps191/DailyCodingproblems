@@ -6,7 +6,7 @@ def withoutDivision(ints):
 	import math
 	r = []
 	for q in range(len(ints)):
-		n = ints * 1
+		n = ints.copy()
 		del n[q]
 		r.append(math.prod(n))
 	return r
